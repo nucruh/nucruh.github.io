@@ -1,22 +1,77 @@
-body {
+body 
+{
     background-color: rgb(19, 22, 24);
 }
 
-h1 {
+h1 
+{
     color: rgb(255, 255, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 300%;
 }
 
-h2 {
+h2 
+{
     color: rgb(255, 255, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 150%;
 }
 
-p {
+p 
+{
+    z-index: 29;
     color: rgb(240, 240, 240);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 4%;
 }
 
+.container 
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.particle
+{
+    position: relative;
+    display: flex;
+}
+
+.particle span
+{
+    z-index: 30;
+    position: relative;
+    width: 2%;
+    height: 2%;
+    background: #8d7c62;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgb(26, 30, 32),
+    0 0 50px #e7c115,
+    0 0 100px #d38e0e;
+
+    animation: animate 15s linear infinite;
+    animation-duration: calc(250s / var(--i));
+}
+.particle span:nth-child(even)
+{
+    background: #ffc72d;
+    box-shadow: 0 0 0 10px rgb(17, 19, 22),
+    0 0 50px #e7c115,
+    0 0 100px #d38e0e;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
