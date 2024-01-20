@@ -1,14 +1,22 @@
 body {
-    background-color: rgb(29, 33, 36);
+    background-color: rgb(19, 22, 24);
 }
 
 h1 {
     color: rgb(255, 255, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: xx-large;
+    font-size: 300%;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 150%;
 }
 
 p {
     color: rgb(240, 240, 240);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 4%;
 }
 
