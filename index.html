@@ -11,12 +11,15 @@
         </center>
 
         <div style="padding-left:1%;z-index:29">
-            <h3 style="padding-left:1%">Short description:</h3>
-            
+            <h3 class="h3">Short description:</h3>
+
             <p>
-                I enjoy creating various virtual projects and sharing them with others. <br>
-                Most of my projects were developed on the online game sharing platform, Roblox. <br>
-                There, I've made various unique projects, including but not limited to: <br>
+                I enjoy creating various virtual projects and sharing them with
+                others. <br>
+                Most of my projects were developed on the online game sharing
+                platform, Roblox. <br>
+                There, I've made various unique projects, including but not
+                limited to: <br>
                 <br>
 
                 &nbsp &nbsp a unique 2D rendering system, <br>
@@ -26,7 +29,8 @@
                 &nbsp &nbsp a winter candy simulator... <br>
 
                 <br>
-                I will now share some of these creations (and some other things like macros) here.
+                I will now share some of these creations (and some other things
+                like macros) here.
             </p>
         </div>
 
@@ -34,59 +38,83 @@
             <br><br><br>
             <h2>My Creations</h2>
 
-            <p style="padding-left:0%">2D Forager like Renderer</p>
-            <img src=".\images\example1.PNG" width="30%">
+            <p style="padding-left:0%">
+                <u>
+                    <i>
+                        <b>
+                            2D Forager like Renderer
+                        </b>
+                    </i>
+                </u>
+                <br>
+                Uses Roblox image frames -> their positions are modified each frame. <br>
+                The grass tile connections simply use a table that contains possible <br>
+                connection directions and adjusts the texture accordingly, this gives it <br>
+                a unified look. <br>
+                <img src=".\images\example1.PNG" width="30%">
+
+                <div style="background-color:rgb(13, 13, 19); width:30%">
+                    <pre>
+                        return {
+                            ['Grass'] = {
+                                x = {
+                                    ['0'] = 64,
+                                    ['1'] = 48,
+                                    ['2'] = 32,
+                                    ['3'] = 16,
+                                    ['4'] = 0},
+                                y1 = {
+                                    ['N'] = 16,
+                                    ['E'] = 32,
+                                    ['S'] = 48,
+                                    ['W'] = 0},
+                                y2 = {
+                                    ['NS'] = 16,
+                                    ['WE'] = 0,
+                                    ['SE'] = 64,
+                                    ['SW'] = 80,
+                                    ['NW'] = 96,
+                                    ['NE'] = 48},
+                                y3 = {
+                                    ['NEW'] = 0,
+                                    ['NSE'] = 16,
+                                    ['SEW'] = 32,
+                                    ['NSW'] = 48},
+                                y4 = {
+                                    ['SWNE'] = 0},
+                            }
+                        
+                        }
+                    </pre>
+                </div>
+
+            </p>
+
+            <hr>
+
+            <p style="padding-left:0%">
+                <u>
+                    <i>
+                        <b>
+                            Minecraft-like Terrain Generator
+                        </b>
+                    </i>
+                </u>
+                <br>
+                Using some known 3D perlin noise generation techniques and some <br>
+                fractal brownian motion, I was able to get this kind of terrain <br>
+                generation. I also included a culling system which really helps <br>
+                when you're using Roblox decals and parts to render the blocks
+                <br>
+                <img src=".\images\example2.PNG" width="30%">
+
+                <div style="background-color:rgb(13, 13, 19); width:30%">
+                    <pre>
+                    </pre>
+                </div>
+
+            </p>
         </center>
-
-
-        <div class="container">
-            <div class="particle">
-                <span style="--i:11"></span>
-                <span style="--i:23"></span>
-                <span style="--i:15"></span>
-                <span style="--i:14"></span>
-                <span style="--i:18"></span>
-                <span style="--i:19"></span>
-                <span style="--i:20"></span>
-                <span style="--i:10"></span>
-                <span style="--i:19"></span>
-                <span style="--i:15"></span>
-                <span style="--i:13"></span>
-                <span style="--i:12"></span>
-                <span style="--i:19"></span>
-                <span style="--i:21"></span>
-                <span style="--i:23"></span>
-                <span style="--i:17"></span>
-                <span style="--i:11"></span>
-                <span style="--i:18"></span>
-                <span style="--i:24"></span>
-                <span style="--i:12"></span>
-                <span style="--i:20"></span>
-                <span style="--i:10"></span>
-                <span style="--i:19"></span>
-                <span style="--i:15"></span>
-                <span style="--i:13"></span>
-                <span style="--i:12"></span>
-                <span style="--i:19"></span>
-                <span style="--i:21"></span>
-                <span style="--i:23"></span>
-                <span style="--i:17"></span>
-                <span style="--i:11"></span>
-                <span style="--i:18"></span>
-                <span style="--i:24"></span>
-                <span style="--i:12"></span>
-                <span style="--i:18"></span>
-                <span style="--i:24"></span>
-                <span style="--i:12"></span>
-                <span style="--i:20"></span>
-                <span style="--i:10"></span>
-                <span style="--i:18"></span>
-                <span style="--i:24"></span>
-                <span style="--i:12"></span>
-                <span style="--i:20"></span>
-                <span style="--i:10"></span>
-            </div>
-        </div>
 
     </body>
 
