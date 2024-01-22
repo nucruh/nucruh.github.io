@@ -33,6 +33,12 @@ p
     padding-left: 4%;
 }
 
+a
+{
+    color: rgb(125, 188, 224);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 pre
 {
     color: rgb(163, 163, 163);
