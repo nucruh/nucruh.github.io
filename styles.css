@@ -1,43 +1,74 @@
+/* Importing font */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
 
+/* Setting the overall background color */
 body {
     background-color: rgb(19, 22, 24);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-.heading-container {
+/* Container holding the title and background shape */
+.container {
+    position: relative;
+    width: 100%;
+    padding: 10% 4%; /* Adjust padding as needed */
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+}
+
+/* Background shape behind the title */
+.background-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ensure the background shape doesn't exceed the viewport */
+    height: 100%;
+    background: url('images/backgroundtitle.PNG') no-repeat center/cover;
+    clip-path: polygon(0% 0%, 0% 90%, 100% 100%, 100% 0%);
+    opacity: 0.5; /* Semi-transparency */
+    z-index: 0;
+    overflow-x: hidden; /* Additional safeguard against overflow */
+}
+
+/* Title text */
+.website-title {
+    position: relative;
+    z-index: 1;
     text-align: left;
-    padding-left: 5%;
 }
 
-
-h1 {
+/* Main heading styling */
+.website-title h1 {
+    padding: 0;
+    margin: 0;
     color: rgb(255, 255, 255);
     font-family: 'JetBrains Mono', monospace;
-    font-size: 300%;
+    font-size: 4.5rem;
+}
+
+/* Additional text styling */
+h2, h3, p, a, pre, .desc {
+    font-family: 'JetBrains Mono', monospace;
+    color: rgb(255, 255, 255);
 }
 
 h2 {
-    color: rgb(255, 255, 255);
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 200%;
+    font-size: 2rem;
 }
 
-.h3 {
-    color: rgb(255, 255, 255);
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 150%;
+h3 {
+    font-size: 1.5rem;
 }
 
 p {
     z-index: 29;
     color: rgb(189, 189, 189);
-    font-family: 'JetBrains Mono', monospace;
     padding-left: 4%;
 }
 
 a {
     color: rgb(125, 188, 224);
-    font-family: 'JetBrains Mono', monospace;
 }
 
 pre {
@@ -47,6 +78,5 @@ pre {
 
 .desc {
     color: rgb(189, 189, 189);
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 75%;
+    font-size: 0.75rem;
 }
