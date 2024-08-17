@@ -11,6 +11,7 @@
         <center>
             <h1>Nucruh aka 123MRK123</h1>
         </center>
+        
 
         <div style="padding-left:1%;z-index:29">
             <h3 class="h3">Short description:</h3>
@@ -40,60 +41,6 @@
         <center>
             <br><br><br>
             <h2>My Creations</h2>
-
-            <p style="padding-left:0%">
-                <u>
-                    <i>
-                        <b>
-                            2D Forager like Renderer
-                        </b>
-                    </i>
-                </u>
-                <br>
-                Uses Roblox image frames -> their positions are modified each frame. <br>
-                The grass tile connections simply use a table that contains possible <br>
-                connection directions and adjusts the texture accordingly, this gives it <br>
-                a unified look. <br>
-                The code shown below is my config for the grass tiling. <br>
-                <br>
-                <img src=".\images\example1.PNG" width="30%">
-
-                <div style="background-color:rgb(13, 13, 19); width:30%">
-                    <pre>
-                        return {
-                            ['Grass'] = {
-                                x = {
-                                    ['0'] = 64,
-                                    ['1'] = 48,
-                                    ['2'] = 32,
-                                    ['3'] = 16,
-                                    ['4'] = 0},
-                                y1 = {
-                                    ['N'] = 16,
-                                    ['E'] = 32,
-                                    ['S'] = 48,
-                                    ['W'] = 0},
-                                y2 = {
-                                    ['NS'] = 16,
-                                    ['WE'] = 0,
-                                    ['SE'] = 64,
-                                    ['SW'] = 80,
-                                    ['NW'] = 96,
-                                    ['NE'] = 48},
-                                y3 = {
-                                    ['NEW'] = 0,
-                                    ['NSE'] = 16,
-                                    ['SEW'] = 32,
-                                    ['NSW'] = 48},
-                                y4 = {
-                                    ['SWNE'] = 0},
-                            }
-                        
-                        }
-                    </pre>
-                </div>
-
-            </p>
 
             <hr>
             <p style="padding-left:0%">
