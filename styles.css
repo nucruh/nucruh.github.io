@@ -14,7 +14,7 @@ body {
     position: relative;
     width: 100%;
     padding: 10% 4%; /* Adjust padding as needed */
-    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+    box-sizing: border-box;
 }
 
 /* Background shape behind the title */
