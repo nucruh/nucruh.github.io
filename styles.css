@@ -1,53 +1,46 @@
-body 
-{
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+body {
     background-color: rgb(19, 22, 24);
 }
 
-h1 
-{
+h1 {
     color: rgb(255, 255, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 300%;
 }
 
-h2 
-{
+h2 {
     color: rgb(255, 255, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 200%;
 }
 
-.h3 
-{
+.h3 {
     color: rgb(255, 255, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 150%;
 }
 
-
-p 
-{
+p {
     z-index: 29;
     color: rgb(189, 189, 189);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     padding-left: 4%;
 }
 
-a
-{
+a {
     color: rgb(125, 188, 224);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'JetBrains Mono', monospace;
 }
 
-pre
-{
+pre {
     color: rgb(163, 163, 163);
     text-align: left;
 }
 
-.desc
-{
+.desc {
     color: rgb(189, 189, 189);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 75%;
 }
