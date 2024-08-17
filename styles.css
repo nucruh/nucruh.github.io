@@ -54,7 +54,8 @@ h2, h3, p, a, pre, .desc {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    padding-left: 2.5%
 }
 
 h3 {
@@ -79,4 +80,81 @@ pre {
 .desc {
     color: rgb(189, 189, 189);
     font-size: 0.75rem;
+}
+
+.project-card {
+    position: relative;
+    background-size: cover; /* Adjusts the background image size to cover the card */
+    background-position: center;
+    height: 600px; /* Adjust height as needed */
+    overflow: hidden; /* Ensures content doesn’t overflow */
+    margin-bottom: 20px; /* Optional: Space between project cards */
+    clip-path: polygon(0% 0%, 0% 90%, 100% 100%, 100% 0%);
+}
+
+.project-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background */
+    color: #fff;
+    padding: 20px;
+}
+.project-card h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.button {
+    background-color: #00bfff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 0;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#experience {
+    padding: 2rem;
+    color: #333;
+}
+
+#experience h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.experience-card {
+    background-color: #373737;
+    border-radius: 2px;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    max-width: 800px;
+    transition: transform 0.3s ease;
+}
+
+.experience-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #007acc;
+}
+
+.experience-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.experience-card:hover {
+    transform: scale(1.02);
+}
+
+#experience-timer {
+    font-weight: bold;
+    color: #007acc;
 }

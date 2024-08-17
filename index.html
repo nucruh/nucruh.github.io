@@ -14,10 +14,100 @@
         <div class="background-shape"></div>
         <div class="website-title">
             <h1>Necta Developments</h1>
+            <h3>Making whatever I want to since 2021</h3>
         </div>
     </div>
 
+    <section id="projects">
+        <h2>Projects</h2>
+        
+        <div class="project-card" style="background-image: url('images/fishclicker.PNG');">
+            <div class="project-content">
+                <h3>Fish Clicker</h3>
+                <p>
+                    My 2nd pixel art styled game, this one's just a classic clicker but with some <br>
+                    elements from games such as Leaf Blower Revolution. <br>
+                    <a href="https://www.roblox.com/games/18859129045/fish-clicker" class="button">Visit Project</a>
+                </p>
+            </div>
+        </div>
     
+        <div class="project-card" style="background-image: url('images/factorygame.PNG');">
+            <div class="project-content">
+                <h3>Paper Factory</h3>
+                <p>
+                    A factory automation game I decided to make after gaining <br>
+                    inspiration from Satisfactory and the fact that none of the <br>
+                    games I've played on Roblox have included things such as actual <br>
+                    deforming of belts. <br>
+                    <br>
+                    Includes fully procedural generation of belt curves <br>
+                    using cubic Bézier curves.
+                    <!-- <a href="https://www.roblox.com/games/18859129045/fish-clicker" class="button">Visit Project</a> -->
+                </p>
+            </div>
+        </div>
+    
+        <!-- Add more project cards here -->
+    </section>
+
+    <!-- New Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-card" data-start-date="2019-12-27">
+            <h3>Scripting</h3>
+            <p>
+                I've been scripting on Roblox on and off for <span class="experience-timer"></span>
+            </p>
+        </div>
+        
+        <div class="experience-card"  data-start-date="2018-12-15">
+            <h3>Modeling</h3>
+            <p>
+                My first models were made on Roblox <span class="experience-timer"></span> ago, in 2020 I installed Blender 
+                for the first time and really began my modeling journey
+            </p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Necta Developments. All rights reserved.</p>
+        <p>Links:
+            <a href="https://discord.gg/E3Wb23yagF">Discord</a> |
+            <a href="https://www.roblox.com/groups/11502766/Necta-Developments">Roblox</a>
+        </p>
+    </footer>
+
+
+    <script>
+        // Function to calculate and update the timer
+        function updateTimers() {
+            // Select all experience cards
+            const cards = document.querySelectorAll('.experience-card');
+            
+            cards.forEach(card => {
+                // Get the start date from the data attribute
+                const startDate = card.getAttribute('data-start-date');
+                const now = new Date();
+                const start = new Date(startDate);
+                const elapsedTime = now - start;
+    
+                // Calculate years, months, and days
+                const years = Math.floor(elapsedTime / (1000 * 60 * 60 * 24 * 365));
+                const months = Math.floor(elapsedTime % (1000 * 60 * 60 * 24 * 365) / (1000 * 60 * 60 * 24 * 30));
+                const days = Math.floor((elapsedTime % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
+    
+                const timeString = `${years} years, ${months} months`;
+                
+                // Update the timer text
+                card.querySelector('.experience-timer').textContent = timeString;
+            });
+        }
+    
+        // Call the function to update timers
+        updateTimers();
+    </script>
 </body>
 
 </html>
