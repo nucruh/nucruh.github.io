@@ -4,6 +4,12 @@ body {
     background-color: rgb(19, 22, 24);
 }
 
+.heading-container {
+    text-align: left;
+    padding-left: 5%;
+}
+
+
 h1 {
     color: rgb(255, 255, 255);
     font-family: 'JetBrains Mono', monospace;
