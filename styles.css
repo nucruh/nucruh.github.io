@@ -12,10 +12,21 @@ body {
 /* Container holding the title and background shape */
 .container {
     position: relative;
-    width: 100%;
-    padding: 10% 4%; /* Adjust padding as needed */
+    max-width: 1920px;
+    padding: 10% 0%;
+    margin: 0 auto;
+
     box-sizing: border-box;
 }
+
+.container2 {
+    position: relative;
+    max-width: 1920px;
+    padding: 10% 0%;
+
+    box-sizing: border-box;
+}
+
 
 /* Background shape behind the title */
 .background-shape {
@@ -89,6 +100,7 @@ pre {
     height: 600px; /* Adjust height as needed */
     overflow: hidden; /* Ensures content doesn’t overflow */
     margin-bottom: 20px; /* Optional: Space between project cards */
+    max-width: 2000px; /* Limit width for each project card */
     clip-path: polygon(0% 0%, 0% 90%, 100% 100%, 100% 0%);
 }
 
@@ -101,8 +113,10 @@ pre {
     padding: 20px;
 }
 .project-card h3 {
-    margin: 0;
+    margin: 0 auto;
     font-size: 24px;
+    max-width: 2000px; /* Limit width for each project card */
+    margin: 20px auto; /* Center each card */
 }
 
 .button {

@@ -10,16 +10,19 @@
 </head>
 
 <body>
-    <div class="container">
+    <!-- Main container to control the width and center content -->
+    <div class="container2">
         <div class="background-shape"></div>
-        <div class="website-title">
+        <div class="website-title" style="padding: 5%;">
             <h1>Necta Developments</h1>
             <h3>Making whatever I want to since 2021</h3>
         </div>
     </div>
 
-    <section id="projects">
-        <h2>Projects</h2>
+    <!-- Projects Section -->
+     
+    <section id="projects" class="container">
+        <h2>Recent Projects</h2>
         
         <div class="project-card" style="background-image: url('images/fishclicker.PNG');">
             <div class="project-content">
@@ -27,7 +30,7 @@
                 <p>
                     My 2nd pixel art styled game, this one's just a classic clicker but with some <br>
                     elements from games such as Leaf Blower Revolution. <br>
-                    <a href="https://www.roblox.com/games/18859129045/fish-clicker" class="button">Visit Project</a>
+                    <a href="https://www.roblox.com/games/18859129045/fish-clicker" class="button" target="_blank">Visit Project</a>
                 </p>
             </div>
         </div>
@@ -43,7 +46,17 @@
                     <br>
                     Includes fully procedural generation of belt curves <br>
                     using cubic Bézier curves.
-                    <!-- <a href="https://www.roblox.com/games/18859129045/fish-clicker" class="button">Visit Project</a> -->
+                </p>
+            </div>
+        </div>
+
+        <div class="project-card" style="background-image: url('images/hydratedearth.png');">
+            <div class="project-content">
+                <h3>Hydrated Earth</h3>
+                <p>
+                    A game that was meant to recreate the look and feel of another game<br>
+                    on Roblox called Scorched Earth (by Durak Group), I feel like I did that well. <br>
+                    <a href="https://www.roblox.com/games/17295859346/Hydrated-Earth" class="button" target="_blank">Visit Project</a>
                 </p>
             </div>
         </div>
@@ -51,8 +64,8 @@
         <!-- Add more project cards here -->
     </section>
 
-    <!-- New Experience Section -->
-    <section id="experience">
+    <!-- Experience Section -->
+    <section id="experience" class="container">
         <h2>Experience</h2>
         <div class="experience-card" data-start-date="2019-12-27">
             <h3>Scripting</h3>
@@ -61,24 +74,23 @@
             </p>
         </div>
         
-        <div class="experience-card"  data-start-date="2018-12-15">
+        <div class="experience-card" data-start-date="2018-12-15">
             <h3>Modeling</h3>
             <p>
                 My first models were made on Roblox <span class="experience-timer"></span> ago, in 2020 I installed Blender 
                 for the first time and really began my modeling journey
             </p>
         </div>
-
     </section>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="container">
         <p>&copy; 2024 Necta Developments. All rights reserved.</p>
         <p>Links:
-            <a href="https://discord.gg/E3Wb23yagF">Discord</a> |
-            <a href="https://www.roblox.com/groups/11502766/Necta-Developments">Roblox</a>
+            <a href="https://discord.gg/E3Wb23yagF" target="_blank">Discord</a> |
+            <a href="https://www.roblox.com/groups/11502766/Necta-Developments" target="_blank">Roblox</a>
         </p>
     </footer>
-
 
     <script>
         // Function to calculate and update the timer
