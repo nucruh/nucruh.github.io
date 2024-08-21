@@ -3,10 +3,23 @@
 
 /* Setting the overall background color */
 body {
-    background-color: rgb(19, 22, 24);
+    /* Background color */
+    background-color: rgb(19, 22, 24); /* This will act as a fallback or show through where the image does not cover */
+    
+    /* Background image settings */
+    background-image: url('images/grayscale_nectarines.png'); /* Path to your grayscale texture */
+    background-repeat: repeat; /* Ensure the image tiles both horizontally and vertically */
+    background-size: 100px 100px; /* Adjust this if you need to scale the image differently */
+    background-attachment: fixed; /* Keeps the background image fixed in place during scrolling */
+    
+    /* Reset margin and padding */
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    opacity: 1;
+    z-index: 1;
+
+    /* Prevent horizontal scrolling */
+    overflow-x: hidden;
 }
 
 /* Container holding the title and background shape */
@@ -23,6 +36,7 @@ body {
     position: relative;
     max-width: 1920px;
     padding: 10% 0%;
+    z-index: 5;
 
     box-sizing: border-box;
 }
@@ -36,16 +50,18 @@ body {
     width: 100vw; /* Ensure the background shape doesn't exceed the viewport */
     height: 100%;
     background: url('images/backgroundtitle.PNG') no-repeat center/cover;
+    background-color: rgb(128, 128, 128);
+    background-blend-mode: multiply;
     clip-path: polygon(0% 0%, 0% 90%, 100% 100%, 100% 0%);
-    opacity: 0.5; /* Semi-transparency */
-    z-index: 0;
+    opacity: 1; /* Semi-transparency */
+    z-index: 5;
     overflow-x: hidden; /* Additional safeguard against overflow */
 }
 
 /* Title text */
 .website-title {
     position: relative;
-    z-index: 1;
+    z-index: 5;
     text-align: left;
 }
 
