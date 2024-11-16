@@ -63,6 +63,7 @@ body {
     position: relative;
     z-index: 5;
     text-align: left;
+    font-size: clamp(2vw, 8vw, 4.5vw);
 }
 
 /* Main heading styling */
@@ -71,7 +72,7 @@ body {
     margin: 0;
     color: rgb(255, 255, 255);
     font-family: 'JetBrains Mono', monospace;
-    font-size: 4.5rem;
+    font-size: clamp(2vw, 8vw, 4.5vw);
 }
 
 /* Additional text styling */
