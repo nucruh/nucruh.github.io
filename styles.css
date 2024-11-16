@@ -50,10 +50,10 @@ body {
     width: 100vw; /* Ensure the background shape doesn't exceed the viewport */
     height: 100%;
     background: url('images/backgroundtitle.PNG') no-repeat center/cover;
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(194, 167, 95);
     background-blend-mode: multiply;
     clip-path: polygon(0% 0%, 0% 90%, 100% 100%, 100% 0%);
-    opacity: 1; /* Semi-transparency */
+    opacity: .7; /* Semi-transparency */
     z-index: 5;
     overflow-x: hidden; /* Additional safeguard against overflow */
 }
