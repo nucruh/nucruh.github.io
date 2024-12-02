@@ -62,8 +62,8 @@ body {
 .website-title {
     position: relative;
     z-index: 5;
-    text-align: left;
-    font-size: clamp(2vw, 8vw, 4.5vw);
+    text-align: center;
+    font-size: clamp(4vw, 16vw, 9vw);
 }
 
 /* Main heading styling */
@@ -72,7 +72,7 @@ body {
     margin: 0;
     color: rgb(255, 255, 255);
     font-family: 'JetBrains Mono', monospace;
-    font-size: clamp(2vw, 8vw, 4.5vw);
+    font-size: clamp(4vw, 16vw, 9vw);
 }
 
 /* Additional text styling */
@@ -162,7 +162,7 @@ html {
 }
 
 .experience-card {
-    background-color: #373737;
+    background-color: #2a2a2a;
     border-radius: 2px;
     margin: 1rem auto;
     padding: 1.5rem;
