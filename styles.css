@@ -49,8 +49,8 @@ body {
     left: 0;
     width: 100vw; /* Ensure the background shape doesn't exceed the viewport */
     height: 100%;
-    background: url('images/backgroundtitle.PNG') no-repeat center/cover;
-    background-color: rgb(194, 167, 95);
+    background: url('images/new_title.png') no-repeat center/cover;
+    background-color: rgb(240, 240, 103);
     background-blend-mode: multiply;
     clip-path: polygon(0% 0%, 0% 90%, 100% 100%, 100% 0%);
     opacity: .7; /* Semi-transparency */
@@ -64,6 +64,7 @@ body {
     z-index: 5;
     text-align: center;
     font-size: clamp(4vw, 16vw, 9vw);
+    text-shadow: 2px 2px #6c6c6c;
 }
 
 /* Main heading styling */
