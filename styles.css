@@ -11,6 +11,7 @@ body {
     background-repeat: repeat; /* Ensure the image tiles both horizontally and vertically */
     background-size: 100px 100px; /* Adjust this if you need to scale the image differently */
     background-attachment: fixed; /* Keeps the background image fixed in place during scrolling */
+    background-blend-mode: soft-light; /* or overlay, soft-light, etc. */
     
     /* Reset margin and padding */
     margin: 0;
@@ -112,30 +113,40 @@ pre {
 
 .project-card {
     position: relative;
-    background-size: cover; /* Adjusts the background image size to cover the card */
+    background-size: cover;
     background-position: center;
-    height: 600px; /* Adjust height as needed */
-    overflow: hidden; /* Ensures content doesn’t overflow */
-    margin-bottom: 20px; /* Optional: Space between project cards */
-    max-width: 2000px; /* Limit width for each project card */
+    height: 600px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    max-width: 2000px;
     clip-path: polygon(0% 0%, 0% 90%, 100% 100%, 100% 0%);
+    transition: transform 0.3s ease;
+
+    display: flex;              /* make it a flex container */
+    align-items: center;        /* vertical centering */
+    justify-content: center;    /* horizontal centering */
+    text-align: center;         /* center text inside */
 }
 
 .project-content {
-    position: absolute;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background */
+    background: rgba(0, 0, 0, 0.5);
     color: #fff;
     padding: 15px;
+    max-width: 90%; /* optional, keeps content from stretching too wide */
 }
+
 .project-card h3 {
     margin: 0 auto;
     font-size: 24px;
-    max-width: 2000px; /* Limit width for each project card */
-    margin: 20px auto; /* Center each card */
+    max-width: 2000px;
+    margin: 20px auto;
     
 }
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
 
 .button {
     background-color: #00bfff;
