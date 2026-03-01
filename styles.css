@@ -41,25 +41,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Top-right fixed button */
-.top-right-button {
-    position: fixed;
-    top: 20px;              /* distance from top */
-    right: 20px;            /* distance from right */
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    z-index: 1000;          /* make sure it’s above everything */
-    transition: 0.3s;
-}
 
-.top-right-button:hover {
-    background-color: #45a049;
-    transform: scale(1.05);
-}
 
 
 /* Background shape behind the title */
@@ -220,4 +202,24 @@ html {
 #experience-timer {
     font-weight: bold;
     color: #007acc;
+}
+
+/* Top-right fixed button */
+.top-right-button {
+    position: fixed;
+    top: 20px;              /* distance from top */
+    right: 20px;            /* distance from right */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    z-index: 1000;          /* make sure it’s above everything */
+    transition: 0.3s;
+}
+
+.top-right-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
 }
