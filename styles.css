@@ -342,12 +342,14 @@ p
         flex-direction: column;
         padding: 0.5em 1em;
         gap: 1.5em;
+        max-width: 100%;
     }
 
     .contentCard,
     .contentCardImg {
         margin: 0;
         width: 100%;
+        max-width: 100%;
     }
 
     /* Disable hover "jumping" on mobile */
