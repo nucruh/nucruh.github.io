@@ -1,225 +1,299 @@
-/* Importing font */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
-
-/* Setting the overall background color */
-body {
-    /* Background color */
-    background-color: rgb(19, 22, 24); /* This will act as a fallback or show through where the image does not cover */
-    
-    /* Background image settings */
-    background-image: url('images/grayscale_nectarines.png'); /* Path to your grayscale texture */
-    background-repeat: repeat; /* Ensure the image tiles both horizontally and vertically */
-    background-size: 100px 100px; /* Adjust this if you need to scale the image differently */
-    background-attachment: fixed; /* Keeps the background image fixed in place during scrolling */
-    background-blend-mode: soft-light; /* or overlay, soft-light, etc. */
-    
-    /* Reset margin and padding */
-    margin: 0;
-    padding: 0;
-    opacity: 1;
-    z-index: 1;
-
-    /* Prevent horizontal scrolling */
-    overflow-x: hidden;
-}
-
-/* Container holding the title and background shape */
-.container {
-    position: relative;
-    max-width: 1920px;
-    padding: 10% 0%;
-    margin: 0 auto;
-
-    box-sizing: border-box;
-}
-
-.container2 {
-    position: relative;
-    padding: 10% 0%;
-    z-index: 5;
-
-    box-sizing: border-box;
-}
-
-
-
-
-/* Background shape behind the title */
-.background-shape {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw; /* Ensure the background shape doesn't exceed the viewport */
-    height: 100%;
-    background: url('images/new_title.png') no-repeat center/cover;
-    background-color: rgb(226, 251, 255);
-    background-blend-mode: multiply;
-    clip-path: polygon(0% 0%, 0% 90%, 100% 100%, 100% 0%);
-    opacity: .7; /* Semi-transparency */
-    z-index: 5;
-    overflow-x: hidden; /* Additional safeguard against overflow */
-}
-
-/* Title text */
-.website-title {
-    position: relative;
-    z-index: 5;
-    text-align: center;
-    font-size: clamp(4vw, 16vw, 9vw);
-    text-shadow: 4px 4px #4f4f4f;
-}
-
-/* Main heading styling */
-.website-title h1 {
-    padding: 0;
-    margin: 0;
-    color: rgb(255, 255, 255);
-    font-family: 'JetBrains Mono', monospace;
-    font-size: clamp(4vw, 16vw, 9vw);
-}
-
-/* Additional text styling */
-h2, h3, p, a, pre, .desc {
-    font-family: 'JetBrains Mono', monospace;
-    color: rgb(255, 255, 255);
-}
-
-h2 {
-    font-size: 2.5rem;
-    padding-left: 2.5%
-}
-
-h3 {
-    font-size: 1.5rem;
-}
-
-p {
-    z-index: 29;
-    color: rgb(189, 189, 189);
-    padding-left: 4%;
-}
-
-a {
-    color: rgb(125, 188, 224);
-}
-
-pre {
-    color: rgb(163, 163, 163);
-    text-align: left;
-}
-
-.desc {
-    color: rgb(189, 189, 189);
-    font-size: 0.75rem;
-}
-
-.project-card {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    height: 600px;
-    overflow: hidden;
-    margin-bottom: 20px;
-    max-width: 2000px;
-    clip-path: polygon(0% 0%, 0% 90%, 100% 100%, 100% 0%);
-    transition: transform 0.3s ease;
-
-    display: flex;              /* make it a flex container */
-    align-items: center;        /* vertical centering */
-    justify-content: center;    /* horizontal centering */
-    text-align: center;         /* center text inside */
-}
-
-.project-content {
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 15px;
-    max-width: 90%; /* optional, keeps content from stretching too wide */
-}
-
-.project-card h3 {
-    margin: 0 auto;
-    font-size: 24px;
-    max-width: 2000px;
-    margin: 20px auto;
-    
-}
-
-.project-card:hover {
-    transform: scale(1.02);
-}
-
-
-.button {
-    background-color: #00bfff;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 0;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-html {
+html
+{
     scroll-behavior: smooth;
 }
 
-#experience {
-    padding: 2rem;
-    color: #333;
+body
+{
+    background-color: #1e1e21;
+    margin: 0em;
+    padding: 0em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-top: 7vh;
 }
 
-#experience h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'JetBrains Mono', monospace;
+    color: rgb(218, 228, 237);
+}
+h1 {
+    margin: 0;
+    padding: 0.5em 0;
+
+    font-size: clamp(0.8rem, 2.5vw, 2rem);
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.experience-card {
-    background-color: #2a2a2a;
-    border-radius: 2px;
-    margin: 1rem auto;
-    padding: 1.5rem;
-    max-width: 800px;
-    transition: transform 0.3s ease;
+.linkButton, .downloadButton
+{
+    box-shadow: none;
+    font-family: 'JetBrains Mono', monospace;
+    color: rgb(218, 228, 237);
+    padding: 0.3em 0.9em;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 2px solid rgb(218, 228, 237);
+    border-radius: 0.2em;
+    margin: 0.5em;
+    cursor: pointer;
+    width: fit-content;
+    transition-duration: 0.15s;
 }
 
-.experience-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #007acc;
+.linkButton:hover, .downloadButton:hover
+{
+    transform: scale(0.95);
+    background-color: rgb(218, 220, 237);
+    color: #1e1e1e;
+
+    box-shadow: #60aed3 0px 0px 20px;
+}
+.downloadButton:hover
+{
+    box-shadow: #60d36b 0px 0px 10px;
 }
 
-.experience-card p {
-    font-size: 1rem;
+.linkButton:active, .downloadButton
+{
+    background-color: #1e1e1e;
+    color: rgb(218, 228, 237);
+    transform: scale(0.9);
+}
+
+.titleContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 7vh;
+    font-size: 3vh; /* key driver */
+    display: flex;
+    align-items: center;
+    padding: 10px 30px 10px 30px;
+
+    background-color: #161616;
+    background: rgba(22, 22, 22, 0.8);
+    backdrop-filter: blur(10px);
+    
+    background-image: url("images/icons/grayscale_nectarines.png");
+    background-repeat: repeat;
+    background-size: auto 50%;
+
+    box-shadow: #2c2c2c 0px 0px 20px;
+
+    z-index: 999;
+    
+    width: 100%;
+}
+
+.navTitle {
+    display: flex;
+    justify-content: left;
+    flex : 5
+}
+
+.navButtons {
+    display: flex;
+    justify-content: right;
+    padding: 0px 80px 0px 0px;
+    flex : 5;
+}
+
+.navTitle h1 {
+    font-size: 1.75em;
+    margin: 0;
+}
+
+.navButtons .linkButton, button {
+    font-size: 0.5em;
+}
+
+.category {
+    display: flex;
+    align-items: flex-start;
+    padding: 1em 3em;
+    background-color: #1e1e21;
+    border: 3px solid #2c2c2c;
+    border-radius: 0.2em;
+
+
+    width: max-content;
+
+    margin: 3em auto;
+}
+
+.categoryContent {
+    display: flex;
+    align-items: stretch;
+    padding: 0.5em 3em;
+    max-width: 1920px;
+    margin: 2em auto;
+}
+
+.contentCardImg,
+.contentCard {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #1e1e21;
+    border: 3px solid #2c2c2c;
+    border-radius: 0.5em;
+
+    padding: 1em;
+
+    margin: 0em 1.5em;
+
+    flex: 1;
+    transition-duration: 0.2s;
+}
+
+.contentCardImg:hover,
+.contentCard:hover
+{
+    transform: scale(1.05);
+    transform: translateY(-10px);
+    box-shadow: #d37460 0px 0px 20px;
+}
+.contentCardImg:hover {
+    cursor: pointer;
+}
+
+.contentCardImg:active
+{
+    transform: scale(0.95);
+    transform: translateY(0px);
+    box-shadow: none;
+}
+
+.contentCardImg img {
+    width: 100%;
+    border-radius: 0.5em;
+    height: auto;
+}
+
+.contentCardImg .linkButton,
+.contentCard .linkButton {
+    align-self: center;
+    margin-top: auto;
+}
+
+.contentCardImg p,
+.contentCard p {
+    padding: 0.0em;
     line-height: 1.6;
 }
 
-.experience-card:hover {
-    transform: scale(1.02);
-}
-
-#experience-timer {
-    font-weight: bold;
-    color: #007acc;
-}
-
-/* Top-right fixed button */
-.top-right-button {
+.imagePreview {
     position: fixed;
-    top: 20px;              /* distance from top */
-    right: 20px;            /* distance from right */
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    z-index: 1000;          /* make sure it’s above everything */
-    transition: 0.3s;
+    top : 0;
+    left : 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background 0.5s ease, opacity 0.5s ease;
+    z-index: 1000;
 }
 
-.top-right-button:hover {
-    background-color: #45a049;
-    transform: scale(1.05);
+.imagePreview img {
+  max-width: 80%;
+  max-height: 80%;
+  transform: scale(0.9);
+  transition: transform 0.2s ease;
+}
+
+.imagePreview img.show {
+  transform: scale(1);
+}
+.imagePreview img.hide {
+    transition-duration: 0.5s;
+    transform: translateX(150%) scale(0.3);
+    background: rgba(0, 0, 0, 0);
+}
+.imagePreview.hide {
+    background: rgba(0, 0, 0, 0);
+    opacity: 0;
+}
+
+footer
+{
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    padding: 0.0em;
+    background-color: #161616;
+    box-shadow: #2c2c2c 0px 0px 10px;
+
+    background-image: url("images/icons/grayscale_nectarines.png");
+    background-repeat: repeat;
+    background-size: auto 55%;
+}
+
+a {
+    color: #d37460;
+    text-decoration: none;
+    transition-duration: 0.15s;
+}
+a:hover
+{
+    color: #ff7357;
+    text-decoration: underline;
+}
+
+
+p
+{
+    padding: 1em;
+    font-family: 'JetBrains Mono', monospace;
+    color: rgb(218, 228, 237);
+}
+
+.experienceTimer {
+    background: #2c2c2c;
+    padding: 2px 8px;
+    border-radius: 4px;
+    border-left: 3px solid #d37460;
+    font-size: 0.9em;
+    color: #ff7357;
+}
+
+.experienceRow {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0.5em 0;
+}
+
+
+
+
+
+.centralDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: fit-content;
+}
+.centralDiv .downloadButton {
+    margin: 2em;
+}
+
+.fileSize {
+    font-size: 0.5em;
 }

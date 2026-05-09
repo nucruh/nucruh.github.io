@@ -1,231 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Necta Developments</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="icon" href="images/nectarines.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/icons/icon_scaled.png">
+    <script src="scripts.js" defer></script>
+    
 </head>
-
 <body>
 
-    <a href="VoxelEngine/index.html" class="top-right-button">Voxel Engine</a>
+    <header class="titleContainer">
 
+        <img src="images/icons/icon_scaled.png" style="height:100%; margin-right:30px"> <!--margin right = same as padding sides on titlecontainer-->
+        <div class="navTitle">
+            <h1>Necta Developments</h1>
+        </div>
 
-    <!-- Main container to control the width and center content -->
-    <div class="container2">
-        <div class="background-shape" style="clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);"></div>
-        <div class="website-title">
-            <center><h1>Necta <br> Developments</h1></center>
-            <h3>Owner <br> 123MRK123</h3>
+        <div class="navButtons">
+            <a href="#experience" class="linkButton">Experience</a>
+            <a href="#creations" class="linkButton">Creations</a>
+            <a href="#links" class="linkButton">Links</a>
+
+            <a href="./VoxelEngine/index.html" class="linkButton">Voxel Engine</a>
+        </div>
+
+    </header>
+
+    <div class="category">
+        <h1 id ="experience">Experience</h1>
+    </div>
+
+    <div class="categoryContent" style="width: 50%">
+        <div class="contentCard">
+            <h2>Programming</a></h2>
+            <p class="experienceRow">
+                <span>Roblox Luau</span><span class="experienceTimer" data-start-date="2019-12-27"></span>
+            </p>
+            <p class="experienceRow">
+                <span>Python</span><span class="experienceTimer" data-start-date="2022-11-20"></span>
+            </p>
+            <p class="experienceRow">
+                <span>C#</span><span class="experienceTimer" data-start-date="2025-09-01"></span>
+            </p>
+        </div>
+        <div class="contentCard">
+            <h2>Modelling</a></h2>
+            <p class="experienceRow">
+                <span>Roblox Studio</span><span class="experienceTimer" data-start-date="2018-12-15"></span>
+            </p>
+            <p class="experienceRow">
+                <span>Blender</span><span class="experienceTimer" data-start-date="2020-01-01"></span>
+            </p>
+
         </div>
     </div>
 
-    <!-- Projects Section -->
+    <div class="category">
+        <h1 id="creations">Creations</h1>
+    </div>
 
-
-    
-     
-    <section id="projects" class="container">
-        <h2>Projects & Creations</h2>
-
-                <div class="project-card" style="background-image: url('images/type89.png'); height: 900px;">
-            <div class="project-content">
-                <h3>Type 89 Turret</h3>
-                <p>
-                    Type 89 Turret made for Hydrated Earth
-                </p>
-            </div>
+    <!--tanks-->
+    <div class="categoryContent">
+        <div class="contentCardImg">
+            <h2>Type 89 Turret</h2>
+            <img src="images/creations/type89turret.png" alt="Type 89 IFV Turret">
+            <p>Turret of the Japanese Type 89 Infantry Fighting Vehicle. Made in a low poly style.</p>
         </div>
 
-        <div class="project-card" style="background-image: url('images/krissvector.png'); height: 900px;">
-            <div class="project-content">
-                <h3>KRISS Vector</h3>
-                <p>
-                    Submachine gun made in the style that<br>
-                    I specialize in.
-                </p>
-            </div>
+        <div class="contentCardImg">
+            <h2>T-34-85</h2>
+            <img src="images/creations/t3485.png" alt="T-34-85 Tank">
+
+            <p>Model of the WW2 Soviet T-34-85 Medium Tank.</p>
         </div>
 
-        <div class="project-card" style="background-image: url('images/akm.png'); height: 700px;">
-            <div class="project-content">
-                <h3>AKM</h3>
-                <p>
-                    An assault rifle this time, also in the<br>
-                    style that I do.
-                </p>
-            </div>
+        <div class="contentCardImg">
+            <h2>L3/33 CC</h2>
+            <img src="images/creations/l333c.png" alt="L3/33 CC Tank">
+            <p>Model of the WW2 Italian L3/33 CC Tankette.</p>
+        </div>
+    </div>
+
+    <!--games row1-->
+    <div class="categoryContent">
+        <div class="contentCardImg">
+            <h2>Hydrated Earth</h2>
+            <img src="images/creations/hydratedearth.png" alt="Hydrated Earth first person view">
+
+            <p>Unique combined arms warfare game that is planned to include IFVs, tanks, planes, drone warfare with a custom destruction and building system.</p>
+            <a href="https://www.roblox.com/games/17295859346/Hydrated-Earth" class="linkButton">Visit Project</a>
         </div>
 
-        <div class="project-card" style="background-image: url('images/example5_fix.PNG');">
-            <div class="project-content">
-                <h3>L3/33 Tankette</h3>
-                <p>
-                    Tank model I made for fun, this one was my 2nd.
-                </p>
-            </div>
+        <div class="contentCardImg">
+            <h2>Fish Clicker</h2>
+            <img src="images/creations/fishclicker.png" alt="Fish Clicker Roblox">
+
+            <p>Roblox 2D pixel art incremental game.</p>
+            <a href="https://www.roblox.com/games/18859129045/fish-clicker" class="linkButton">Visit Project</a>
         </div>
+    </div>
 
-        <div class="project-card" style="background-image: url('images/example4.PNG');">
-            <div class="project-content">
-                <h3>T34-85 Medium Tank</h3>
-                <p>
-                    3rd ever tank model.
-                </p>
-            </div>
-        </div>
-        
-        <div class="project-card" style="background-image: url('images/fishclicker.PNG');">
-            <div class="project-content">
-                <h3>Fish Clicker</h3>
-                <p>
-                    My 2nd pixel art styled game, this one's just a classic clicker but with some <br>
-                    elements from games such as Leaf Blower Revolution such as cards. <br>
-                    <a href="https://www.roblox.com/games/18859129045/fish-clicker" class="button" target="_blank">Visit Project</a>
-                </p>
-            </div>
-        </div>
-    
-        <div class="project-card" style="background-image: url('images/factorygame.PNG');">
-            <div class="project-content">
-                <h3>Paper Factory</h3>
-                <p>
-                    A factory automation game I decided to make after gaining <br>
-                    inspiration from Satisfactory and the fact that none of the <br>
-                    games I've played on Roblox have included things such as actual <br>
-                    deforming of belts. <br>
-                    <br>
-                    Includes fully procedural generation of belt curves <br>
-                    using cubic Bézier curves.
-                </p>
-            </div>
-        </div>
-
-        <div class="project-card" style="background-image: url('images/hydratedearth.png');">
-            <div class="project-content">
-                <h3>Hydrated Earth</h3>
-                <p>
-                    A game that was meant to recreate the look and feel of another game<br>
-                    on Roblox called Scorched Earth (by Durak Group), I feel like I did that well. <br>
-                    <a href="https://www.roblox.com/games/17295859346/Hydrated-Earth" class="button" target="_blank">Visit Project</a>
-                </p>
-            </div>
-        </div>
-
-        <div class="project-card" style="background-image: url('images/mccopy.png');">
-            <div class="project-content">
-                <h3>Minecraft Terrain</h3>
-                <p>
-                    A project meant to recreate the terrain of the <br>
-                    early Minecraft era.
-                </p>
-            </div>
-        </div>
-
-        <div class="project-card" style="background-image: url('images/windsway.png');">
-            <div class="project-content">
-                <h3>Interactive Wind Sway</h3>
-                <p>
-                    A Perlin noise based wind sway script that <br>
-                    includes trampling effects for when the player <br>
-                    is close enough.
-                </p>
-            </div>
-        </div>
-
-        <div class="project-card" style="background-image: url('images/grassblowing.png');">
-            <div class="project-content">
-                <h3>Grass Blowing Game</h3>
-                <p>
-                    Project is a spinoff of a decently popular <br>
-                    game called Leaf Blower Revolution.
-                </p>
-            </div>
-        </div>
-
-        <div class="project-card" style="background-image: url('images/stylized.png');">
-            <div class="project-content">
-                <h3>Stylized Models</h3>
-                <p>
-                    Felt like finding out how to make good looking <br>
-                    trees and rocks and finally figured some methods out! <br>
-                    <br>
-                    The trick to make my trees look good was to <br>
-                    place the leaf cards in a volume instead of <br>
-                    trying to keep them so close to their branches <br>
-                    this results in much fuller feeling canopies. 
-                </p>
-            </div>
-        </div>
-
-
-
-        
-    
-
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="container">
-        <center><h2>Experience</h2></center>
-        <div class="experience-card" data-start-date="2019-12-27">
-            <h3>Scripting</h3>
+    <!--games row2-->
+    <div class="categoryContent">
+        <div class="contentCardImg">
+            <h2>Paper Factory</h2>
+            <img src="images/creations/factorygame.png" alt="Factory roblox game">
             <p>
-                I've been scripting on Roblox on and off for <span class="experience-timer"></span>.
+                A factory automation game I decided to make after gaining
+                inspiration from Satisfactory and the fact that none of the games I've played on Roblox have included things such as actual deforming of belts.<br>
+                Includes fully procedural generation of belt curves using cubic Bézier curves.
             </p>
         </div>
-        
-        <div class="experience-card" data-start-date="2018-12-15">
-            <h3>Modeling</h3>
-            <p>
-                My first models were made on Roblox <span class="experience-timer"></span> ago, in 2020 I decided
-                to install Blender and continue modelling there.
-            </p>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="container">
-        <center>
-            <p>Links: <br>
-                <a href="https://discord.gg/E3Wb23yagF" target="_blank">Discord</a> |
-                <a href="https://www.roblox.com/groups/11502766/Necta-Developments" target="_blank">Roblox</a>
-            </p>
-        </center>
- 
+        <div class="contentCardImg">
+            <h2>Minecraft Terrain (Roblox)</h2>
+            <img src="images/creations/terrain.png" alt="Factory roblox game">
+            <p>A project meant to recreate the terrain of the early Minecraft era.</p>
+        </div>
+    </div>
+    
+
+
+    <footer>
+        <p id="links" style="line-height:2em">
+            Made by <a href="https://discord.com/users/442257205689843713">@123MRK123</a> <br>
+            <a href="https://discord.gg/E3Wb23yagF">Discord</a> | <a href="https://www.roblox.com/groups/11502766/Necta-Developments">Roblox</a>
+        </p>
     </footer>
-
-    <script>
-        // Function to calculate and update the timer
-        function updateTimers() {
-            // Select all experience cards
-            const cards = document.querySelectorAll('.experience-card');
-            
-            cards.forEach(card => {
-                // Get the start date from the data attribute
-                const startDate = card.getAttribute('data-start-date');
-                const now = new Date();
-                const start = new Date(startDate);
-                const elapsedTime = now - start;
-    
-                // Calculate years, months, and days
-                const years = Math.floor(elapsedTime / (1000 * 60 * 60 * 24 * 365));
-                const months = Math.floor(elapsedTime % (1000 * 60 * 60 * 24 * 365) / (1000 * 60 * 60 * 24 * 30));
-                const days = Math.floor((elapsedTime % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
-    
-                const timeString = `${years} years, ${months} months`;
-                
-                // Update the timer text
-                card.querySelector('.experience-timer').textContent = timeString;
-            });
-        }
-    
-        // Call the function to update timers
-        updateTimers();
-    </script>
 </body>
-
 </html>
