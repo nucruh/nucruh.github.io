@@ -306,15 +306,31 @@ p
 
 @media (max-width: 900px) {
 
+    /* Global safety: prevents width overflow bugs */
+    * {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
     body {
         padding-top: 10vh;
     }
-    /* Header becomes stacked */
+
+    /* FIX HEADER OVERFLOW */
     .titleContainer {
         flex-direction: column;
         height: auto;
         padding: 10px;
-        gap: 10px;
+        width: 100%;
+    }
+
+    .titleContainer img {
+        height: 0;
+        margin-right: 0;
     }
 
     .navTitle,
@@ -330,14 +346,14 @@ p
         gap: 6px;
     }
 
-    /* Sections */
+    /* FIX HORIZONTAL OVERFLOW BLOCKS */
     .category {
-        width: 90%;
+        width: 95%;
+        max-width: 100%;
         padding: 1em;
-        text-align: center;
+        margin: 2em auto;
     }
 
-    /* CRITICAL: cards go vertical instead of row */
     .categoryContent {
         flex-direction: column;
         padding: 0.5em 1em;
@@ -345,27 +361,27 @@ p
         max-width: 100%;
     }
 
+    /* CARDS */
     .contentCard,
     .contentCardImg {
-        margin: 0;
         width: 100%;
-        max-width: 100%;
+        margin: 0;
     }
 
-    /* Disable hover "jumping" on mobile */
+    /* disable hover effects on mobile */
     .contentCardImg:hover,
     .contentCard:hover {
         transform: none;
         box-shadow: none;
     }
 
-    /* Images scale properly */
+    /* IMAGES */
     .contentCardImg img {
         width: 100%;
         height: auto;
     }
 
-    /* Experience rows wrap nicely */
+    /* EXPERIENCE ROW FIX */
     .experienceRow {
         flex-direction: column;
         align-items: flex-start;
@@ -373,21 +389,15 @@ p
         max-width: 100%;
     }
 
-    /* Buttons more touch-friendly */
+    /* BUTTONS */
     .linkButton,
     .downloadButton {
         font-size: 0.9em;
         padding: 0.5em 1em;
     }
 
-    /* Footer spacing */
+    /* FOOTER */
     footer {
         padding: 1em;
-    }
-
-
-    .titleContainer img {
-        height: 0vh;
-        margin-right: 10px;
     }
 }
