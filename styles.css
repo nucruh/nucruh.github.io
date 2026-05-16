@@ -8,6 +8,8 @@ body
 {
     background-color: #1e1e21;
 
+    font-family: 'JetBrains Mono', monospace;
+
     background-image: url("images/creations/background.png");
     background-size: cover;
     background-position: center;
@@ -27,7 +29,6 @@ body
 
 h1, h2, h3, h4, h5, h6
 {
-    font-family: 'JetBrains Mono', monospace;
     color: rgb(218, 228, 237);
 }
 h1 {
@@ -145,7 +146,7 @@ h1 {
     justify-content: center;
     padding: 0.5em 3em;
     max-width: 1920px;
-    margin: 0em auto;
+    margin: 0.5em auto;
 }
 
 .contentCardImg,
@@ -156,9 +157,9 @@ h1 {
     background-color: #1e1e21;
     border: 3px solid #2c2c2c;
     border-radius: 0.5em;
-
+    
     padding: 1em;
-    max-width: 50%;
+    max-width: 90%;
 
     margin: 0em 1.5em;
 
@@ -197,7 +198,7 @@ h1 {
 }
 
 .contentCardImg p,
-.contentCard p {
+.contentCard .experienceRow {
     padding: 0.0em;
     line-height: 1.6;
 }
@@ -239,7 +240,7 @@ h1 {
 
 footer
 {
-    margin-top: auto;
+    margin-top: 3em;
     width: 100%;
     text-align: center;
     padding: 0.0em;
@@ -263,6 +264,7 @@ a:hover
 }
 
 
+.experienceRow,
 p
 {
     padding: 1em;
@@ -270,20 +272,40 @@ p
     color: rgb(218, 228, 237);
 }
 
+
+
+
+.experienceRow {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 2fr;
+
+    align-items: center;
+
+    max-width: 100%;
+    margin: 0.3em 1em;
+    gap: 1em;
+}
+
 .experienceTimer {
     background: #2c2c2c;
     padding: 2px 8px;
     border-radius: 4px;
     border-left: 3px solid #d37460;
-    font-size: 0.9em;
+    font-size: 1.2em;
     color: #ff7357;
 }
 
-.experienceRow {
+.experienceRow img {
+    height: 3em;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.experienceRow span {
     display: flex;
-    justify-content: space-between;
-    max-width: 400px;
-    margin: 0.5em 0;
+    align-items: center;
+    gap: 0.5em;
 }
 
 .titleContainer img {
@@ -391,9 +413,7 @@ p
 
     /* EXPERIENCE ROW FIX */
     .experienceRow {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.3em;
+        grid-template-columns: 1fr;
         max-width: 100%;
     }
 
