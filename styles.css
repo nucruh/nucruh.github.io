@@ -328,7 +328,7 @@ p
 .centralDiv .downloadButton {
     margin: 2em;
     display: inline-block;
-    width: 220px; /* adjust to taste */
+    width: 22%; /* adjust to taste */
     text-align: center;
     box-sizing: border-box;
 }
