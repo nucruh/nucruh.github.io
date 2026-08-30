@@ -11,7 +11,7 @@ function updateTimers() {
         const months = Math.floor(elapsedTime % (1000 * 60 * 60 * 24 * 365) / (1000 * 60 * 60 * 24 * 30));
         const days = Math.floor((elapsedTime % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
 
-        const timeString = `${years} years, ${months} months`;
+        const timeString = `${years}y, ${months}m`;
 
         timer.textContent = timeString;
     });

@@ -84,19 +84,27 @@
 
     <div class="categoryContent">
         <div class="contentCardImg">
-            <h2>3D Environment Models</h2>
-            <img src="images/creations/palms_environment.jpg" alt="The ore fields experience">
-            <p>Optimized, game ready assets (trees, rocks, bushes) assembled into a rendered scene.</p>
+            <h2>Custom Voxel Engine</h2>
+            <img src="images/creations/voxelengine_terrain.jpg" alt="Voxel Engine Terrain">
+            <p>Custom engine using C# and OpenGL.</p>
         </div>
     </div>
 
     <div class="categoryContent">
+        <div class="contentCardImg">
+            <h2>3D Environment Models</h2>
+            <img src="images/creations/palms_environment.jpg" alt="Palms">
+            <p>Optimized, game ready assets (trees, rocks, bushes) assembled into a rendered scene.</p>
+        </div>
+
         <div class="contentCardImg">
             <h2>The Ore Fields Experience</h2>
             <img src="images/creations/tofe.png" alt="The ore fields experience">
             <p>Incremental 2D pixel art Roblox game.</p>
         </div>
     </div>
+
+
 
     <!--tanks-->
     <div class="categoryContent">
@@ -147,7 +155,7 @@
             <p>
                 A factory automation game I decided to make after gaining
                 inspiration from Satisfactory and the fact that none of the games I've played on Roblox have included things such as actual deforming of belts.<br>
-                Includes fully procedural generation of belt curves using cubic Bézier curves.
+                Includes fully procedural generation of belt curves using cubic Bezier curves.
             </p>
         </div>
 
@@ -162,9 +170,22 @@
 
     <footer>
         <p id="links" style="line-height:2em">
-            Made by <a href="https://discord.com/users/442257205689843713" target="_blank">@123MRK123</a> <br>
+            Made by <a href="https://discord.com/users/442257205689843713" target="_blank">123MRK123</a> <br>
             <a href="https://discord.gg/E3Wb23yagF" target="_blank">Discord</a> | <a href="https://www.roblox.com/groups/11502766/Necta-Developments" target="_blank">Roblox</a>
         </p>
     </footer>
+
+
+    <script>
+        function snapFontsTo5px() {
+        const root = document.documentElement;
+        const basePx = parseFloat(getComputedStyle(root).fontSize);
+        const snapped = Math.round(basePx / 5) * 5;
+        root.style.fontSize = snapped + 'px';
+        }
+
+        snapFontsTo5px();
+        window.addEventListener('resize', snapFontsTo5px);
+    </script>
 </body>
 </html>
