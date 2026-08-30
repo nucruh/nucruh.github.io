@@ -44,7 +44,7 @@ body
 
 h1, h2, h3, h4, h5, h6
 {
-    color: rgb(218, 228, 237);
+    color: rgb(239, 248, 255);
 }
 h1 {
     margin: 0;
@@ -61,11 +61,11 @@ h1 {
 {
     box-shadow: none;
     font-family: 'Chisel', monospace;
-    color: rgb(218, 228, 237);
+    color: rgb(239, 248, 255);
     padding: 0.3em 0.9em;
     white-space: nowrap;
     background-color: transparent;
-    border: 2px solid rgb(218, 228, 237);
+    border: 2px solid rgb(239, 248, 255);
     border-radius: 0.1em;
     margin: 0.5em;
     cursor: pointer;
@@ -90,7 +90,7 @@ h1 {
 .linkButton:active, .downloadButton
 {
     background-color: #1e1e1e;
-    color: rgb(218, 228, 237);
+    color: rgb(239, 248, 255);
     transform: scale(0.9);
 }
 
@@ -290,7 +290,7 @@ p
 {
     padding: 1em;
     font-family: 'Chisel', monospace;
-    color: rgb(218, 228, 237);
+    color: rgb(239, 248, 255);
 }
 
 
