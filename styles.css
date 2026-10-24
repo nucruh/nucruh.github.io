@@ -57,7 +57,7 @@ body {
     letter-spacing: 0.2rem;
     word-spacing: 0.2rem;
 
-    background: var(--bg) url("images/creations/background.png") center / cover fixed;
+    background: var(--bg) url("images/creations/background.webp") center / cover fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -398,7 +398,7 @@ a:hover {
 .experienceRow img {
     display: block;
     height: 3em;
-    width: auto;
+    width: 3em;
     object-fit: contain;
 }
 
