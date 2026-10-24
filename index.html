@@ -3,36 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Necta Developments: Roblox games, a custom C# voxel engine and game-ready 3D models.">
     <title>Necta Developments</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/icons/icon_scaled.png">
     <script src="scripts.js" defer></script>
-    
 </head>
 <body>
 
     <header class="titleContainer">
+        <a href="#" class="brand">
+            <img src="images/icons/icon_scaled.png" alt="">
+            <div class="navTitle">
+                <h1>Necta Developments</h1>
+            </div>
+        </a>
 
-        <img src="images/icons/icon_scaled.png"> <!--margin right = same as padding sides on titlecontainer-->
-        <div class="navTitle">
-            <h1>Necta Developments</h1>
-        </div>
-
-        <div class="navButtons">
+        <nav class="navButtons" aria-label="Main">
             <a href="#experience" class="linkButton">Experience</a>
             <a href="#creations" class="linkButton">Creations</a>
             <a href="#links" class="linkButton">Links</a>
-
             <a href="./VoxelEngine/" class="linkButton">Voxel Engine</a>
-        </div>
-
+        </nav>
     </header>
 
+
+    <!-- ========== Experience ========== -->
     <div class="category">
-        <h1 id ="experience">Experience</h1>
+        <h1 id="experience">Experience</h1>
     </div>
 
-    <div class="categoryContent" style="width: 80%">
+    <div class="categoryContent experience">
         <div class="contentCard">
             <h2>Programming</h2>
 
@@ -40,25 +41,22 @@
                 <img src="images/icons/luau.svg" alt="Luau">
                 <span>Roblox Luau</span>
                 <span class="experienceTimer" data-start-date="2019-12-27"></span>
-
             </div>
-
             <div class="experienceRow">
                 <img src="images/icons/python.png" alt="Python">
                 <span>Python</span>
                 <span class="experienceTimer" data-start-date="2022-11-20"></span>
-
             </div>
-
             <div class="experienceRow">
                 <img src="images/icons/csharp.png" alt="C#">
                 <span>C#</span>
                 <span class="experienceTimer" data-start-date="2025-09-01"></span>
             </div>
         </div>
+
         <div class="contentCard">
-            <h2>Modelling</a></h2>
-            
+            <h2>Modelling</h2>
+
             <div class="experienceRow">
                 <img src="images/icons/robloxstudio.png" alt="Roblox Studio">
                 <span>Roblox Studio</span>
@@ -74,14 +72,16 @@
                 <span>Substance 3D Painter</span>
                 <span class="experienceTimer" data-start-date="2022-12-12"></span>
             </div>
-
         </div>
     </div>
 
+
+    <!-- ========== Creations ========== -->
     <div class="category">
         <h1 id="creations">Creations</h1>
     </div>
 
+    <!-- Engine -->
     <div class="categoryContent">
         <div class="contentCardImg">
             <h2>Custom Voxel Engine</h2>
@@ -90,68 +90,64 @@
         </div>
     </div>
 
+    <!-- Environment + incremental game -->
     <div class="categoryContent">
         <div class="contentCardImg">
             <h2>3D Environment Models</h2>
-            <img src="images/creations/palms_environment.jpg" alt="Palms">
+            <img src="images/creations/palms_environment.jpg" alt="Palms" loading="lazy">
             <p>Optimized, game ready assets (trees, rocks, bushes) assembled into a rendered scene.</p>
         </div>
 
         <div class="contentCardImg">
             <h2>The Ore Fields Experience</h2>
-            <img src="images/creations/tofe.png" alt="The ore fields experience">
+            <img src="images/creations/tofe.png" alt="The Ore Fields Experience" loading="lazy">
             <p>Incremental 2D pixel art Roblox game.</p>
         </div>
     </div>
 
-
-
-    <!--tanks-->
+    <!-- Tanks -->
     <div class="categoryContent">
         <div class="contentCardImg">
             <h2>Type 89 Turret</h2>
-            <img src="images/creations/type89turret.png" alt="Type 89 IFV Turret">
+            <img src="images/creations/type89turret.png" alt="Type 89 IFV Turret" loading="lazy">
             <p>Turret of the Japanese Type 89 Infantry Fighting Vehicle. Made in a low poly style.</p>
         </div>
 
         <div class="contentCardImg">
             <h2>T-34-85</h2>
-            <img src="images/creations/t3485.png" alt="T-34-85 Tank">
-
+            <img src="images/creations/t3485.png" alt="T-34-85 Tank" loading="lazy">
             <p>Model of the WW2 Soviet T-34-85 Medium Tank.</p>
         </div>
 
         <div class="contentCardImg">
             <h2>L3/33 CC</h2>
-            <img src="images/creations/l333c.png" alt="L3/33 CC Tank">
+            <img src="images/creations/l333c.png" alt="L3/33 CC Tank" loading="lazy">
             <p>Model of the WW2 Italian L3/33 CC Tankette.</p>
         </div>
     </div>
 
-    <!--games row1-->
+    <!-- Games, row 1 -->
     <div class="categoryContent">
         <div class="contentCardImg">
             <h2>Hydrated Earth</h2>
-            <img src="images/creations/hydratedearth.png" alt="Hydrated Earth first person view">
-
+            <img src="images/creations/hydratedearth.png" alt="Hydrated Earth first person view" loading="lazy">
             <p>Unique combined arms warfare game that is planned to include IFVs, tanks, planes, drone warfare with a custom destruction and building system.</p>
-            <a href="https://www.roblox.com/games/17295859346/Hydrated-Earth" class="linkButton">Visit Project</a>
+            <a href="https://www.roblox.com/games/17295859346/Hydrated-Earth" class="linkButton" target="_blank" rel="noopener noreferrer">Visit Project</a>
         </div>
 
         <div class="contentCardImg">
             <h2>Fish Clicker</h2>
-            <img src="images/creations/fishclicker.png" alt="Fish Clicker Roblox">
-
+            <img src="images/creations/fishclicker.png" alt="Fish Clicker Roblox" loading="lazy">
             <p>Roblox 2D pixel art incremental game.</p>
-            <a href="https://www.roblox.com/games/18859129045/fish-clicker" class="linkButton">Visit Project</a>
+            <a href="https://www.roblox.com/games/18859129045/fish-clicker" class="linkButton" target="_blank" rel="noopener noreferrer">Visit Project</a>
         </div>
     </div>
 
-    <!--games row2-->
+    <!-- Games, row 2 -->
     <div class="categoryContent">
         <div class="contentCardImg">
             <h2>Paper Factory</h2>
-            <img src="images/creations/factorygame.png" alt="Factory roblox game">
+            <img src="images/creations/factorygame.png" alt="Paper Factory Roblox game" loading="lazy">
             <p>
                 A factory automation game I decided to make after gaining
                 inspiration from Satisfactory and the fact that none of the games I've played on Roblox have included things such as actual deforming of belts.<br>
@@ -161,31 +157,19 @@
 
         <div class="contentCardImg">
             <h2>Minecraft Terrain (Roblox)</h2>
-            <img src="images/creations/terrain.png" alt="Factory roblox game">
+            <img src="images/creations/terrain.png" alt="Minecraft style terrain in Roblox" loading="lazy">
             <p>A project meant to recreate the terrain of the early Minecraft era.</p>
         </div>
     </div>
-    
 
 
     <footer>
-        <p id="links" style="line-height:2em">
-            Made by <a href="https://discord.com/users/442257205689843713" target="_blank">123MRK123</a> <br>
-            <a href="https://discord.gg/E3Wb23yagF" target="_blank">Discord</a> | <a href="https://www.roblox.com/groups/11502766/Necta-Developments" target="_blank">Roblox</a>
+        <p id="links">
+            Made by <a href="https://discord.com/users/442257205689843713" target="_blank" rel="noopener noreferrer">123MRK123</a><br>
+            <a href="https://discord.gg/E3Wb23yagF" target="_blank" rel="noopener noreferrer">Discord</a> |
+            <a href="https://www.roblox.com/groups/11502766/Necta-Developments" target="_blank" rel="noopener noreferrer">Roblox</a>
         </p>
     </footer>
 
-
-    <script>
-        function snapFontsTo5px() {
-        const root = document.documentElement;
-        const basePx = parseFloat(getComputedStyle(root).fontSize);
-        const snapped = Math.round(basePx / 5) * 5;
-        root.style.fontSize = snapped + 'px';
-        }
-
-        snapFontsTo5px();
-        window.addEventListener('resize', snapFontsTo5px);
-    </script>
 </body>
 </html>

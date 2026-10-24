@@ -57,7 +57,7 @@ function enlargeCard(card) {
         overlay.classList.add('hide');
         setTimeout(() => {
             overlay.remove();
-        }, 150);
+        }, 500);
 
 
     });
